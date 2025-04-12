@@ -2,23 +2,56 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Compras</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Mi Página Web Sencilla</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Mi Lista de Compras</h1>
-        
-        <div class="input-section">
-            <input type="text" id="itemInput" placeholder="Añade un producto...">
-            <button onclick="addItem()">Añadir</button>
-        </div>
-        
-        <ul id="shoppingList">
-        </ul>
-    </div>
+    <header>
+        <h1>Bienvenidos a mi página web</h1>
+        <nav>
+            <a href="#inicio">Inicio</a> |
+            <a href="#acerca">Acerca de</a> |
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
 
-    <script src="script.js"></script>
+    <main>
+        <section id="inicio">
+            <h2>Inicio</h2>
+            <p>Esta es una página web muy sencilla creada solo con HTML.</p>
+            <p>Puedes usarla como base para tus proyectos.</p>
+        </section>
+
+        <section id="acerca">
+            <h2>Acerca de</h2>
+            <p>Esta página demuestra lo básico de HTML:</p>
+            <ul>
+                <li>Estructura de documento HTML</li>
+                <li>Encabezados</li>
+                <li>Párrafos</li>
+                <li>Listas</li>
+                <li>Enlaces</li>
+            </ul>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form>
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre"><br><br>
+                
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+                
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje"></textarea><br><br>
+                
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p> mi pagina</p>
+    </footer>
 </body>
 </html>
